@@ -1,10 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Koh Santepheap";
+  }
 .home-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background-image: url("C:\Users\evanb\OneDrive\Documents\GitHub\MSM\msm\src\assets\imgs\IMG_4251.JPG");
+    background-image: url("../assets/imgs/boat-sunset.png");
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,12 +46,12 @@
     transition: all 1s ease-out;
 }
 */
-/* */
-
 .header-boxes {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-evenly;
+    
 }
 .header-boxes .header-box {
     padding: 60px 50px;
@@ -60,4 +65,56 @@
     text-decoration: none;
     color:#1A1B2B;
     width: 35%;
+}
+/* End of Header */
+
+.home-first-body {
+    background-color: #e0ddcf;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    position: relative;
+}
+.home-first-body h1 {
+    font-size: 6vw;
+    color:#1A1B2B;
+    line-height: 6.5vw;
+    width:45%;
+    padding-left: 15%;
+    z-index: 2;
+}
+.home-first-body p {
+    font-size: 2vw;
+    color:#1A1B2B;
+    font-weight: 300;
+    width: 20%;
+    padding-left: 18%;
+    padding-top: 20px;
+    line-height: 3vw;
+}
+.home-first-body img {
+    position: absolute;
+}
+.home-first-body .sunset-1 {
+    height: 40vw;
+    right: 10%;
+    top: 10%;
+    border: solid 5px #3E629D;
+}
+.home-first-body .sunset-2 {
+    height: 20vw;
+    right: 25%;
+    top: 50%;
+    border: solid 5px #3E629D;
+}
+.svg {
+    aspect-ratio: 900 / 300;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e0ddcf;
+}
+.layer-1 {
+        background-image: url("../assets/other-imgs/wave-haikei (4).svg");
 }

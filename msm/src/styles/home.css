@@ -1,0 +1,63 @@
+.home-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-image: url("C:\Users\evanb\OneDrive\Documents\GitHub\MSM\msm\src\assets\imgs\IMG_4251.JPG");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-header h1 {
+    font-size: 6vw;
+    width: 65%;
+    text-align: center;
+    color:#1A1B2B;
+    line-height: 6.5vw;
+}
+.home-header h3 {
+    font-size: 2vw;
+    color:#1A1B2B;
+    font-weight: 400;
+    padding-top: 20px;
+}
+/*
+.home-header button {
+    font-size: 40px;
+    margin-top: 40px;
+    padding: .1vw 8vw;
+    border-radius: 10px;
+    border: 1px solid #3E629D;
+    box-shadow: 4px 4px 2px #3E629D;
+    color: #1A1B2B;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #e0ddcf;;
+}
+.home-header button:hover {
+    color: #e0ddcf;
+    background-color: #1A1B2B;
+    transition: all 1s ease-out;
+}
+*/
+/* */
+
+.header-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.header-boxes .header-box {
+    padding: 60px 50px;
+    background-color: #e0ddcf;
+}
+.header-boxes .header-box:hover {
+    background-color: #1A1B2B;
+    color:#e0ddcf
+}
+.header-boxes .box-link {
+    text-decoration: none;
+    color:#1A1B2B;
+    width: 35%;
+}

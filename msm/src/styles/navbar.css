@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Koh Santepheap";
+}
+.nav {
+  background-color: #e0ddcf;
+  padding: 1vh 0;
+  border-bottom: solid 1px #788693;
+  position: fixed;
+  width: 100%;
+}
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 2vw;
+}
+.nav-items li {
+  font-size: 30px;
+}
+.nav-items .list-item {
+  text-decoration: none;
+  color: #1a1b2b;
+}
+.nav-items .list-item:hover {
+    color: #788693;
+    transition: color .3s linear;
+}
+.nav img {
+  width: 8vw;
+  height: auto;
+}

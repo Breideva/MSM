@@ -38,7 +38,7 @@
     color: #1A1B2B;
     cursor: pointer;
     font-weight: bold;
-    background-color: #e0ddcf;;
+    background-color: #e0ddcf;
 }
 .home-header button:hover {
     color: #e0ddcf;
@@ -107,6 +107,9 @@
     top: 50%;
     border: solid 5px #3E629D;
 }
+
+/* End of Second Body */
+
 .svg {
     aspect-ratio: 900 / 300;
     width: 100%;
@@ -117,4 +120,79 @@
 }
 .layer-1 {
         background-image: url("../assets/other-imgs/wave-haikei (4).svg");
+}
+.home-second-body {
+    background-color: #1A1B2B;
+    position: relative;
+}
+/*
+.home-second-body .company-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding-bottom: 120px;
+}
+.home-second-body .insta-logo {
+    color: #e0ddcf;
+    font-size: 10vw;
+}
+    */
+.home-second-body img {
+    width: 33.33%;
+    border-top: #3E629D solid 5px;
+    border-bottom: #3E629D solid 5px;
+}
+.home-second-body h1 {
+    position: absolute;
+    font-size: 6vw;
+    color:#e0ddcf;
+    line-height: 6.5vw;
+    top: 35%;
+    left: 20%;
+    background-color: hsla(209, 11%, 52%, 0.5);
+    border-radius: 10px;
+    padding: .5vw;
+}
+.home-second-body button {
+    position: absolute;
+    top: 55%;
+    right: 35vw;
+    font-size: 2vw;
+    margin-top: 40px;
+    padding: 5px 8vw;
+    border-radius: 10px;
+    border: 1px solid #3E629D;
+    box-shadow: 4px 4px 2px #3E629D;
+    color: #1A1B2B;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #e0ddcf;
+}
+.home-second-body button:hover {
+    color: #e0ddcf;
+    background-color: #1A1B2B;
+    transition: all 1s ease-out;
+}
+
+/* End of Second Body */
+
+.home-third-body {
+    background-color: #1A1B2B;
+}
+
+.home-third-body h1  {
+    font-size: 12vw;
+    color:#e0ddcf;
+    line-height: 10vw;
+    padding: 40px 0 20px 0;
+}
+.home-third-body h2 {
+    font-size: 12vw;
+    color:#3E629D;
+    padding: 20px 0 40px 0;
+    line-height: 14vw;
+}
+.layer-2 {
+    background-image: url("../assets/other-imgs/Upside-Down-Wave.svg");
 }

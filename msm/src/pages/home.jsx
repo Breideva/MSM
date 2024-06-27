@@ -43,17 +43,14 @@ export const Home = () => {
         <h1>Expierence the difference on water</h1>
         <p>
           Embark on new water adventures with our trusted and professional
-          marine services by your side{" "}
+          marine services by your side
         </p>
         <img className="sunset-1" src={sunset} alt="image of sunset" />
         <img className="sunset-2" src={sunset2} alt="second image of sunset" />
       </div>
       <div className="svg layer-1"></div>
       <div className="home-second-body">
-        <div>
-          <img src={boat} alt="" />
-          <img src={sideBoat} alt="" />
-          <img src={boat} alt="" />
+        <div className="second-body-content">
           <h1>Discover Our Work</h1>
           <Link>
             <button>View Projects</button>

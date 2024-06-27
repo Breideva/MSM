@@ -6,6 +6,10 @@ import sunset2 from "../assets/imgs/sunset-2.png";
 import sideBoat from "../assets/imgs/side-boat.png";
 import boat from "../assets/imgs/back-of-boat.png";
 import squaresOne from "../assets/other-imgs/Square-Img-1.png";
+import star from "../assets/other-imgs/Star.png";
+import { Star } from "phosphor-react";
+import squaresTwo from "../assets/other-imgs/Square-Img-2.png";
+
 
 export const Home = () => {
   return (
@@ -77,15 +81,45 @@ export const Home = () => {
       </div>
       <div className="home-fifth-body">
         <h1>Reviews tell the truth</h1>
-        <div className="review-box">
-          <div>
-            <h1></h1>
-            <img src="" alt="" />
-            <p></p>
+        <div className="review-boxes">
+          <div className="review-box">
+            <h2>First Last</h2>
+            <img className="pfl-pic" src={sunset2} alt="" />
+            <p>"The best team I've ever worked with"</p>
+            <div className="star-box">
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+            </div>
           </div>
-          <div></div>
-          <div></div>
+          <div className="review-box">
+            <h2>First Last</h2>
+            <img className="pfl-pic" src={sunset2} alt="" />
+            <p>"The best team I've ever worked with"</p>
+            <div className="star-box">
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+            </div>
+          </div>
+          <div className="review-box">
+            <h2>First Last</h2>
+            <img className="pfl-pic" src={sunset2} alt="" />
+            <p>"The best team I've ever worked with"</p>
+            <div className="star-box">
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+              <img src={star} alt="" />
+            </div>
+          </div>
         </div>
+        <img className="square-design-two" src={squaresTwo} alt="" />
       </div>
     </>
   );

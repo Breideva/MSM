@@ -239,28 +239,26 @@
     border: solid 5px #3E629D;
     margin-right: 10%;
 }
-.first-sqaures {
-    background-color: #e0ddcf;
-    position: relative;
-}
 .home-fourth-body .square-design {
     position: absolute;
     height: 50vw;
     right: -10%;
     bottom: 0;
-    
+    z-index: 3;
 }
 
 /* End of Fourth Body */
 
 .home-fifth-body {
     margin-top: -20%;
-    z-index: 5;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    background-color: #e0ddcf;
+    padding-bottom: 15%;
 }
 .home-fifth-body h1 {
     font-size: 6vw;
@@ -268,4 +266,53 @@
     line-height: 6.5vw;
     text-align: center;
     width: 40%;
+    padding-bottom: 40px;
+}
+.review-boxes {
+    display: flex;
+    background-color: #1A1B2B;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vw 0;
+    width: 80%;
+    z-index: 2;
+}
+.review-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.review-box h2 {
+    font-size: 3vw;
+    color:#e0ddcf;
+    font-weight: 500;
+}
+.review-box .pfl-pic {
+    width: 50%;
+    border: #3E629D 5px solid;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+.review-box p {
+    font-size: 1.2vw;
+    font-weight: 300;
+    color:#e0ddcf;
+    margin: 5px 0 10px 0
+}
+.review-boxes .star-box {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: .5vw;
+}
+.star-box img {
+    width: 15%;
+}
+.home-fifth-body .square-design-two {
+    position: absolute;
+    height: 50vw;
+    left: -10%;
+    bottom: 0;
+    z-index: 1;
 }

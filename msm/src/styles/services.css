@@ -1,0 +1,74 @@
+.main-sidebar {
+    display: flex;
+    position: fixed;
+    right: 0;
+    background-color: #E0DDCF;
+    width: 15vw;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    border-left: 1px #788693 solid;
+    height: 100vh;
+    margin-top: 2.5vw;
+}
+.sidebar-link {
+    text-decoration: none;
+    width: 70%;
+    text-align: center;
+}
+.sidebar-link h2:hover {
+    color: #1A1B2B;
+}
+.sidebar-link h2 {
+    color:#788693;
+    font-size: 1.2vw;
+}
+.services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:125vw;   
+}
+.services-header {
+    display: flex;
+    justify-content: start;
+    width: 60%;
+}
+.services-content h1 {
+    font-size: 6vw;
+    color: #1a1b2b;
+    line-height: 6.5vw;
+}
+.services {
+    background-color: #788693;
+    width: 55%;
+    padding: 0 2.5%;
+}
+.services-title {
+    display: flex;
+    align-items: center;
+    margin: 1vw 0 .4vw 0;
+}
+.services-title .title-link {
+    text-decoration: none;
+}
+.services-title .check {
+    font-size: 3vw;
+    color:#1A1B2B
+}
+.services h3 {
+    font-size: 3vw;
+    color: #1a1b2b;
+}
+.services h3:hover {
+    color:#3E629D;
+}
+.services p {
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin-bottom: 8vw;
+}

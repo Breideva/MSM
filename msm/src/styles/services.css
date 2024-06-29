@@ -1,9 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
 .main-sidebar {
     display: flex;
     position: fixed;
     right: 0;
     background-color: #E0DDCF;
-    width: 15vw;
+    width: clamp(125px, 15vw, 300px)
 }
 .sidebar {
     display: flex;
@@ -24,14 +27,17 @@
 }
 .sidebar-link h2 {
     color:#788693;
-    font-size: 1.2vw;
+    font-size: clamp(12px, 1.2vw, 25px);
 }
+
+/* End of Sidebar */
+
 .services-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:125vw;   
+    height: clamp(985px, 125vw, 180vw);   
 }
 .services-header {
     display: flex;
@@ -39,7 +45,7 @@
     width: 60%;
 }
 .services-content h1 {
-    font-size: 6vw;
+    font-size: clamp(25px, 8vw, 200px);
     color: #1a1b2b;
     line-height: 6.5vw;
 }
@@ -65,10 +71,10 @@
     color: #1a1b2b;
 }
 .services h3:hover {
-    color:#788693;
+    color:#E0DDCF;
 }
 .services p {
-    font-size: 1.5vw;
+    font-size: clamp(12px, 1.5vw, 40px);
     font-weight: 300;
     margin-bottom: 8vw;
 }

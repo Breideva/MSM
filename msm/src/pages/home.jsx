@@ -22,14 +22,14 @@ export const Home = () => {
       <div className="header-boxes">
         <Link className="box-link">
           <div className="header-box">
-            <h2>Explore Our Services</h2>
+            <h2>Our Services</h2>
             <p>View work and services we provide </p>
           </div>
         </Link>
         <Link className="box-link">
           <div className="header-box">
             <h2>View Projects</h2>
-            <p>Look at amazing work previously done by us</p>
+            <p>Look at amazing work done by us</p>
           </div>
         </Link>
         <Link className="box-link">
@@ -60,7 +60,7 @@ export const Home = () => {
       <div className="home-third-body">
         <div>
           <h1>Marine Services & Management</h1>
-          <h2>Will get any and every job done</h2>
+          <h2>We get every job done right</h2>
         </div>
       </div>
       <div className="svg layer-2"></div>
@@ -103,20 +103,11 @@ export const Home = () => {
               <img src={star} alt="" />
             </div>
           </div>
-          <div className="review-box">
-            <h2>First Last</h2>
-            <img className="pfl-pic" src={sunset2} alt="" />
-            <p>"The best team I've ever worked with"</p>
-            <div className="star-box">
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-            </div>
-          </div>
         </div>
         <img className="square-design-two" src={squaresTwo} alt="" />
+      </div>
+      <div className="home-sixth-body">
+
       </div>
     </>
   );

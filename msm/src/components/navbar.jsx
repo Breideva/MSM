@@ -10,7 +10,7 @@ export const Navbar = () => {
             <li><Link className="list-item" to='/services'>Services</Link></li>
             <li><Link className="list-item" to='/'>About</Link></li>
             <li><Link className="list-item" to='/'><img src={logo} alt="logo"/></Link></li>
-            <li><Link className="list-item" to='/'>Contact</Link></li>
+            <li><Link className="list-item" to='/contact'>Contact</Link></li>
             <li><Link className="list-item" to='/'>Projects</Link></li>
         </ul>
         

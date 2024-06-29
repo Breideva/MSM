@@ -1,0 +1,59 @@
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+.contact-main img {
+    height: clamp(300px, 40vw, 550px);
+    position: absolute;
+    right: -10%;
+    z-index: -1;
+    bottom: clamp(40px, 5%, 50px);
+}
+.contact-content {
+    display: flex;
+    flex-direction: column;
+}
+.contact-header {
+    display: flex;
+    justify-content: center;
+}
+.contact-main h1 {
+    font-size: clamp(45px, 6vw, 110px);
+    color: #1a1b2b;
+    line-height: clamp(50px, 6.5vw, 110px);
+    text-align: center;
+    width: 80%;
+}
+.contact-content h2 {
+    font-size: clamp(15px, 1vw, 125px);
+    color: #1a1b2b;
+}
+.contact-content input {
+    border-radius: 10px;
+    color: #1a1b2b;
+    border: 1px solid #1a1b2b;
+    width: 100%;
+    padding: 10px 5px;
+    font-size: clamp(15px, 1.2vw, 125px);
+    font-weight: 300;
+    margin-bottom: clamp(15px, 1.5vw, 45px);
+    outline:none;
+}
+.contact-content input:focus {
+    border-bottom: #3E629D solid 2px;
+}
+.box-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: clamp(20px, 5%, 25px);
+}
+.box-contact .last-box {
+    grid-column: span 2;
+    padding: 5px 5px 55px 5px;
+    margin-bottom: 0;
+}

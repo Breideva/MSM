@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   height: clamp(300px,35vw, 525px);
-  background-image: url("../assets/imgs/boat-sunset.png");
+  background-image: url("../assets/imgs/boat-sunset-2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -263,7 +263,7 @@
   justify-content: space-evenly;
   padding: 2vw;
   gap: 4vw;
-  width: 80%;
+  width: 60%;
   z-index: 2;
 }
 .review-box {

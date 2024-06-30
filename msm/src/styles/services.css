@@ -37,7 +37,8 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: clamp(985px, 125vw, 180vw);   
+    height: clamp(985px, 125vw, 180vw);  
+    background-color: #E0DDCF; 
 }
 .services-header {
     display: flex;

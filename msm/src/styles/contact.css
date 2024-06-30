@@ -5,6 +5,7 @@
     height: 100vh;
     overflow-x: hidden;
     position: relative;
+    background-color: #E0DDCF;
 }
 .contact-main img {
     height: clamp(300px, 40vw, 550px);
@@ -27,6 +28,7 @@
     line-height: clamp(50px, 6.5vw, 110px);
     text-align: center;
     width: 80%;
+    margin-top: clamp(5px, 2%, 50px);
 }
 .contact-content h2 {
     font-size: clamp(15px, 1vw, 125px);

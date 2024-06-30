@@ -11,7 +11,7 @@ export const Navbar = () => {
             <li><Link className="list-item" to='/about'>About</Link></li>
             <li><Link className="list-item" to='/'><img src={logo} alt="logo"/></Link></li>
             <li><Link className="list-item" to='/contact'>Contact</Link></li>
-            <li><Link className="list-item" to='/'>Projects</Link></li>
+            <li><Link className="list-item" to='/projects'>Projects</Link></li>
         </ul>
         
    </div>

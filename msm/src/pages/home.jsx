@@ -45,8 +45,8 @@ export const Home = () => {
           Embark on new water adventures with our trusted and professional
           marine services by your side
         </p>
-        <img className="sunset-1" src={sunset} alt="image of sunset" />
-        <img className="sunset-2" src={sunset2} alt="second image of sunset" />
+        <img loading="lazy" className="sunset-1" src={sunset} alt="image of sunset" />
+        <img loading="lazy" className="sunset-2" src={sunset2} alt="second image of sunset" />
       </div>
       <div className="svg layer-1"></div>
       <div className="home-second-body">
@@ -73,38 +73,38 @@ export const Home = () => {
           </p>
           <button>Check Out Services</button>
         </div>
-        <img className="normal-img" src={boat} alt="" />
-        <img className="square-design" src={squaresOne} alt="" />
+        <img loading="lazy" className="normal-img" src={boat} alt="" />
+        <img loading="lazy" className="square-design" src={squaresOne} alt="" />
       </div>
       <div className="home-fifth-body">
         <h1>Reviews tell the truth</h1>
         <div className="review-boxes">
           <div className="review-box">
             <h2>First Last</h2>
-            <img className="pfl-pic" src={sunset2} alt="" />
+            <img loading="lazy" className="pfl-pic" src={sunset2} alt="" />
             <p>"The best team I've ever worked with"</p>
             <div className="star-box">
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-              <img src={star} alt="" />
+              <img loading="lazy" src={star} alt="" />
+              <img loading="lazy" src={star} alt="" />
+              <img loading="lazy" src={star} alt="" />
+              <img loading="lazy" src={star} alt="" />
+              <img loading="lazy" src={star} alt="" />
             </div>
           </div>
           <div className="review-box">
             <h2>First Last</h2>
-            <img className="pfl-pic" src={sunset2} alt="" />
+            <img loading="lazy" className="pfl-pic" src={sunset2} alt="" />
             <p>"The best team I've ever worked with"</p>
             <div className="star-box">
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-              <img src={star} alt="" />
+              <img loading="lazy" src={star} alt="" />
+              <img loading="lazy" src={star} alt="" />
+              <img loading="lazy" src={star} alt="" />
+              <img loading="lazy" src={star} alt="" />
+              <img loading="lazy" src={star} alt="" />
             </div>
           </div>
         </div>
-        <img className="square-design-two" src={squaresTwo} alt="" />
+        <img loading="lazy" className="square-design-two" src={squaresTwo} alt="" />
       </div>
       <div className="home-sixth-body">
 

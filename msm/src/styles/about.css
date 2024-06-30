@@ -5,6 +5,7 @@
     justify-content: center;
     height: clamp(650px, 75vw, 2000px);
     position: relative;
+    background-color: #E0DDCF ;
 }
 .about-main .f-content {
     width: 75%;
@@ -32,6 +33,7 @@
 .s-content img {
     width: clamp(175px, 25%, 400px);
     border: #3E629D solid 5px;
+    z-index: 2;
 }
 .s-content h3 {
   font-size: clamp(12px, 2vw, 50px);
@@ -44,5 +46,5 @@
     position: absolute;
     top: 40%;
     left: -12%;
-    z-index: -1;
+    z-index: 1;
 }

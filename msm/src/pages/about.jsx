@@ -1,7 +1,7 @@
 import "../styles/about.css";
 import { Navbar } from "../components/navbar";
-import Guys from "../assets/imgs/Guys-With-Fish.png"
-import Squarefour from "../assets/other-imgs/Square-Img-4.png"
+import Guys from "../assets/imgs/Guys-With-Fish.png";
+import Squarefour from "../assets/other-imgs/Square-Img-4.png";
 
 export const About = () => {
   return (
@@ -29,7 +29,7 @@ export const About = () => {
           </h3>
         </div>
         <div className="squares">
-        <img src={Squarefour} alt="" />
+          <img src={Squarefour} alt="" />
         </div>
       </div>
     </>

@@ -75,7 +75,7 @@
   color: #1a1b2b;
   font-weight: 300;
   width: 20%;
-  padding-left: 18%;
+  padding-left: 16%;
   padding-top: 20px;
   line-height: clamp(25px, 3vw, 50px);
 }
@@ -109,9 +109,9 @@
   background-image: url("../assets/other-imgs/wave-haikei (4).svg");
 }
 .home-second-body {
-  background-image: url("../assets/imgs/back-of-boat.png");
+  background-image: url("../assets/imgs/Fishing.png");
   position: relative;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 5px solid #3e629d;
@@ -306,4 +306,60 @@
   left: -10%;
   bottom: 0;
   z-index: 1;
+}
+
+/* End of Sixth Body */
+
+.home-sixth-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e0ddcf;
+}
+.home-sixth-body .sixth-header {
+  width: 75%;
+  text-align: center;
+}
+.sixth-header h1 {
+  font-size: clamp(35px, 6vw, 110px);
+  color: #1a1b2b;
+  line-height: clamp(35px, 6.5vw, 110px);
+}
+.sixth-header h2 {
+  font-size: clamp(17px, 2.5vw, 50px);
+  color: #1a1b2b;
+  font-weight: 500;
+}
+.home-sixth-body .body-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 25px 0;
+  column-gap: 5vw;
+  align-items: center;
+}
+.home-sixth-body .body-text {
+  width: clamp(200px, 35%, 500px)
+}
+.home-sixth-body .body-text p {
+  font-size: clamp(14px, 2vw, 50px);
+  color: #1a1b2b;
+  font-weight: 300;
+}
+.home-sixth-body .body-text button {
+  font-size: clamp(16px, 2vw, 50px);
+  margin-top: 40px;
+  padding: 5px 8vw;
+  border-radius: 10px;
+  border: 1px solid #3e629d;
+  box-shadow: 4px 4px 2px #1a1b2b;
+  color: #e0ddcf;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #3e629d;
+}
+
+.home-sixth-body img {
+  width: clamp(175px, 20%, 400px);
+  border: #3e629d 5px solid;
 }

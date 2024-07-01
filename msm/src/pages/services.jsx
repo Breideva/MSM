@@ -37,7 +37,7 @@ export const Services = () => {
         <div className="services">
           <div  className="services-title">
             <CheckCircle className="check" />
-            <Link class="title-link">
+            <Link to="/usgc-captains" class="title-link">
               <h3  id="detail">USGC Captains</h3>
             </Link>
           </div>
@@ -48,7 +48,7 @@ export const Services = () => {
           </p>
           <div className="services-title">
             <CheckCircle className="check" />
-            <Link class="title-link">
+            <Link to="/detailing" class="title-link">
               <h3 id="hull">Detailing</h3>
             </Link>
           </div>
@@ -59,7 +59,7 @@ export const Services = () => {
           </p>
           <div className="services-title">
             <CheckCircle className="check" />
-            <Link class="title-link">
+            <Link to="/hull-bottom-cleaning" class="title-link">
               <h3 id="monthly">Hull/Bottom Cleaning</h3>
             </Link>
           </div>
@@ -70,7 +70,7 @@ export const Services = () => {
           </p>
           <div className="services-title">
             <CheckCircle className="check" />
-            <Link class="title-link">
+            <Link to="/monthly-management-plans" class="title-link">
               <h3 id="boat">Monthly Management Plans</h3>
             </Link>
           </div>
@@ -81,7 +81,7 @@ export const Services = () => {
           </p>
           <div className="services-title">
             <CheckCircle className="check" />
-            <Link class="title-link">
+            <Link to="/boat-watch" class="title-link">
               <h3 id="tech">Boat Watch</h3>
             </Link>
           </div>
@@ -92,8 +92,8 @@ export const Services = () => {
           </p>
           <div className="services-title">
             <CheckCircle className="check" />
-            <Link class="title-link">
-              <h3>Mecury Techs</h3>
+            <Link to="/mercury-techs" class="title-link">
+              <h3>Mercury Techs</h3>
             </Link>
           </div>
           <p>

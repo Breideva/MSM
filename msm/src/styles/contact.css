@@ -6,9 +6,10 @@
     overflow-x: hidden;
     position: relative;
     background-color: #E0DDCF;
+    z-index: -2;
 }
 .contact-main img {
-    height: clamp(300px, 40vw, 550px);
+    height: clamp(300px, 40vw, 650px);
     position: absolute;
     right: -10%;
     z-index: -1;
@@ -44,6 +45,7 @@
     font-weight: 300;
     margin-bottom: clamp(15px, 1.5vw, 45px);
     outline:none;
+    z-index: 3;
 }
 .contact-content input:focus {
     border-bottom: #3E629D solid 2px;

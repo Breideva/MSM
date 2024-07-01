@@ -1,0 +1,77 @@
+.service-pages-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: clamp(700px, 92vw, 2000px);
+  background-color: #1a1b2b;
+}
+.service-pages-main h1 {
+  font-size: clamp(35px, 6vw, 110px);
+  color: #e0ddcf;
+  line-height: clamp(35px, 6.5vw, 110px);
+  text-align: center;
+  padding-bottom: 2vw;
+}
+
+.service-pages-main .ser-body {
+  display: flex;
+  justify-content: center;
+  column-gap: 3vw;
+}
+.ser-body .content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.f-body {
+  margin-bottom: clamp(20px, 2.5vw, 100px);
+}
+.f-body .content {
+  width: 40%;
+}
+.content h2 {
+  font-size: clamp(15px, 2.2vw, 70px);
+  color: #e0ddcf;
+  font-weight: 400;
+}
+.content ul {
+  font-size: clamp(12px, 1.8vw, 70px);
+  color: #e0ddcf;
+  font-weight: 400;
+  list-style: circle;
+  padding-left: 22px;
+  padding-top: clamp(10px, 1.2vw, 70px);
+  cursor: default;
+}
+.content li:hover {
+  color: #3e629d;
+}
+.f-body img {
+  width: 25%;
+  border: #3e629d solid 5px;
+}
+.s-body .content {
+  width: 20%;
+}
+.s-body img {
+  width: 45%;
+  border: #3e629d solid 5px;
+}
+.service-pages-main button {
+  font-size: clamp(10px, 2vw, 50px);
+  margin-top: clamp(10px, 1vw, 70px);
+  padding: 5px 4vw;
+  border-radius: 10px;
+  border: 1px solid #3e629d;
+  box-shadow: 0.5vw 0.5vw 0px #3e629d;
+  color: #1a1b2b;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #e0ddcf;
+  white-space: nowrap;
+}
+.service-pages-main button:hover {
+  color: #e0ddcf;
+  background-color: #1a1b2b;
+  transition: all 1s ease-out;
+}

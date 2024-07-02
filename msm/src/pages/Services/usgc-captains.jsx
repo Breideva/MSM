@@ -1,8 +1,7 @@
 import { Navbar } from "../../components/navbar";
 import sunset from "../../assets/imgs/sunset.png";
 import sunsetTwo from "../../assets/imgs/sunset-2.png";
-import "../../styles/service-pages.css";
-
+import "../../styles/Services/service-pages.css"
 export const Usgc = () => {
   return (
     <>

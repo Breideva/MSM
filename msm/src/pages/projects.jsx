@@ -12,7 +12,7 @@ export const Projects = () => {
             <h1>Projects</h1>
         </div>
         <div className="boxes">
-        <div class="box-l">
+        <Link to="/first" class="box-l">
                 <img src={Fishing} alt="" />
                 <div class="overlay">
                     <div class="overlay-text">
@@ -20,8 +20,8 @@ export const Projects = () => {
                         <p>Project Date</p>
                     </div>
                 </div>
-            </div>
-            <div class="box-r">
+            </Link>
+            <Link to="/second" class="box-r">
                 <img src={Fishing} alt="" />
                 <div class="overlay">
                     <div class="overlay-text">
@@ -29,8 +29,8 @@ export const Projects = () => {
                         <p>Project Date</p>
                     </div>
                 </div>
-            </div>
-            <div class="box-l">
+            </Link>
+            <Link to="/third" class="box-l">
                 <img src={Fishing} alt="" />
                 <div class="overlay">
                     <div class="overlay-text">
@@ -38,8 +38,8 @@ export const Projects = () => {
                         <p>Project Date</p>
                     </div>
                 </div>
-            </div>
-            <div class="box-r">
+            </Link>
+            <Link to="/fourth" class="box-r">
                 <img src={Fishing} alt="" />
                 <div class="overlay">
                     <div class="overlay-text">
@@ -47,7 +47,7 @@ export const Projects = () => {
                         <p>Project Date</p>
                     </div>
                 </div>
-            </div>
+            </Link>
             
         </div>
     </div>

@@ -10,6 +10,10 @@ import { Hull } from './pages/Services/hull-bottom-cleaning';
 import { Management } from './pages/Services/monthly-management-plans';
 import { Watch } from './pages/Services/boat-watch';
 import { Mercury } from './pages/Services/mercury-techs';
+import { First } from './pages/Projects/first';
+import { Second } from './pages/Projects/second';
+import { Third } from './pages/Projects/third';
+import { Fourth } from './pages/Projects/fourth';
 
 function App() {
 
@@ -21,7 +25,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="contact" element={<Contact />}></Route>
           <Route path="about" element={<About />}></Route>
-          <Route path="projects" element={<Projects />}></Route>
+          {/* Services */}
           <Route path="services" element={<Services />}></Route>
           {/* Service Pages */}
           <Route path='usgc-captains' element={<Usgc />}></Route>
@@ -30,7 +34,14 @@ function App() {
           <Route path='monthly-management-plans' element={<Management />}></Route>
           <Route path='boat-watch' element={<Watch />}></Route>
           <Route path='mercury-techs' element={<Mercury />}></Route>
-          
+          {/* Projects */}
+          <Route path="projects" element={<Projects />}></Route>
+          {/* Project Pages */}
+          <Route path="first" element={<First />}></Route>
+          <Route path="second" element={<Second />}></Route>
+          <Route path="third" element={<Third />}></Route>
+          <Route path="fourth" element={<Fourth />}></Route>
+
         </Routes>
       </Router>
     </>

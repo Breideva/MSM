@@ -1,18 +1,24 @@
-import { Navbar } from "../../components/navbar";
 import sunset from "../../assets/imgs/sunset.png";
 import sunsetTwo from "../../assets/imgs/sunset-2.png";
 import "../../styles/Services/service-pages.css"
+import { Layout } from "../../components/layout";
+import { servicePageAnimation } from "../../animation/servicePagesAnimation";
+import { useEffect } from "react";
+
 
 export const Mercury = () => {
+  useEffect(() => {
+    servicePageAnimation();
+  }, []);
   return (
     <>
-      <Navbar />
+      <Layout >
       <div className="service-pages-main">
         <div className="extra-header">
-          <h1>Mercury</h1>
+          <h1 className="page-h1">Mercury</h1>
         </div>
         <div className="ser-body f-body">
-          <div className="content">
+          <div className="content cont-1">
             <h2>
               Experience top-notch marine service with our team of certified
               Mercury technicians. Whether you need routine maintenance, engine
@@ -22,10 +28,10 @@ export const Mercury = () => {
             </h2>
           </div>
 
-          <img src={sunset} alt="" />
+          <img className="page-img-1" src={sunset} alt="" />
         </div>
         <div className="ser-body s-body">
-          <div className="content">
+          <div className="content cont-2">
             <h2>
               Trust our dedicated Mercury techs to provide meticulous care for
               your vessel, so you can enjoy worry-free boating adventures.
@@ -33,9 +39,10 @@ export const Mercury = () => {
             <button>Learn More</button>
           </div>
 
-          <img src={sunsetTwo} alt="" />
+          <img className="page-img-2" src={sunsetTwo} alt="" />
         </div>
       </div>
+      </Layout>
     </>
   );
 };

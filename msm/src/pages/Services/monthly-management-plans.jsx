@@ -1,19 +1,25 @@
-import { Navbar } from "../../components/navbar";
 import sunset from "../../assets/imgs/sunset.png";
 import sunsetTwo from "../../assets/imgs/sunset-2.png";
 import "../../styles/Services/service-pages.css"
+import { Layout } from "../../components/layout";
+import { servicePageAnimation } from "../../animation/servicePagesAnimation";
+import { useEffect } from "react";
+
 export const Management = () => {
+  useEffect(() => {
+    servicePageAnimation();
+  }, []);
   return (
     <>
-      <Navbar />
+      <Layout >
       <div className="service-pages-main">
-        <div className="extra-header-2">
-          <h1>Monthly Management Plans</h1>
+        <div>
+          <h1 className="page-h1">Monthly Management Plans</h1>
         </div>
         <div className="ser-body f-body">
-          <div className="content">
+          <div className="content cont-1">
             <h2>
-              Our monthly boat management plans ensure your vessel remains in
+              Our monthly boat management plans ensure your boat remains in
               top condition by thoroughly checking all systems, including the
               battery charger and load testing batteries. We make sure bilges
               are fully operational, bring engines up to temperature, check oil
@@ -21,10 +27,10 @@ export const Management = () => {
             </h2>
           </div>
 
-          <img src={sunset} alt="" />
+          <img className="page-img-1" src={sunset} alt="" />
         </div>
         <div className="ser-body s-body">
-          <div className="content">
+          <div className="content cont-2">
             <h3>
               Count on our comprehensive monthly boat management plans to
               maintain peak performance and reliability, tailored to meet the
@@ -33,9 +39,10 @@ export const Management = () => {
             <button>Learn More</button>
           </div>
 
-          <img src={sunsetTwo} alt="" />
+          <img className="page-img-2" src={sunsetTwo} alt="" />
         </div>
       </div>
+      </Layout>
     </>
   );
 };

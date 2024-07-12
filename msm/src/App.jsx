@@ -14,6 +14,7 @@ import { First } from './pages/Projects/first';
 import { Second } from './pages/Projects/second';
 import { Third } from './pages/Projects/third';
 import { Fourth } from './pages/Projects/fourth';
+import { ScrollToTop } from './components/scrolltotop';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
       <Router>
+        < ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="contact" element={<Contact />}></Route>

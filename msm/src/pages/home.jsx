@@ -1,54 +1,84 @@
-import { Navbar } from "../components/navbar";
-import "../styles/home.css";
+// Router Links
 import { Link } from "react-router-dom";
+
+// Layout
+import { Layout } from "../components/layout";
+
+// Styles
+import "../styles/home.css";
+
+// Images
 import sunset from "../assets/imgs/sunset.png";
 import sunset2 from "../assets/imgs/sunset-2.png";
-import sideBoat from "../assets/imgs/side-boat.png";
-import boat from "../assets/imgs/back-of-boat.png";
-import squaresOne from "../assets/other-imgs/Square-Img-1.png";
 import star from "../assets/other-imgs/Star.png";
-import { Star } from "phosphor-react";
-import squaresTwo from "../assets/other-imgs/Square-Img-2.png";
+import boatFront from "../assets/imgs/boat-front.png";
+import boatBack from "../assets/imgs/back-of-boat.png";
+import midas from "../assets/imgs/Midas-prfl.png";
+import james from "../assets/imgs/James-prfl.png";
+
+// Gsap
+import { homeAnimation } from "../animation/homeAnimation";
+import { useEffect } from "react";
 
 
 export const Home = () => {
+  useEffect(() => {
+    homeAnimation();
+  }, []);
+
   return (
     <>
-      <Navbar />
+      <Layout >
+      {/* Header */}
       <div className="home-header">
-        <h1>Unleash your boat's potential</h1>
-        <h3>Explore our reliable services</h3>
+        <h1 className="header-h1">Unleash Your Boat's Potential</h1>
+        <h3 className="header-h3">Explore our reliable services</h3>
       </div>
       <div className="header-boxes">
-        <Link className="box-link">
+        <Link to="/services" className="box-link">
           <div className="header-box">
             <h2>Our Services</h2>
             <p>View work and services we provide </p>
           </div>
         </Link>
-        <Link className="box-link">
+        <Link to="/projects" className="box-link">
           <div className="header-box">
             <h2>View Projects</h2>
             <p>Look at amazing work done by us</p>
           </div>
         </Link>
-        <Link className="box-link">
+        <Link to="/about" className="box-link">
           <div className="header-box">
             <h2>Learn about us</h2>
             <p>Get to know the ones who help you</p>
           </div>
         </Link>
       </div>
+      {/* First Body */}
       <div className="home-first-body">
-        <h1>Expierence the difference on water</h1>
+        <div className="first-content">
+        <h1>Expierence the Difference on Water</h1>
         <p>
           Embark on new water adventures with our trusted and professional
-          marine services by your side
+          marine services by your side.
         </p>
-        <img loading="lazy" className="sunset-1" src={sunset} alt="image of sunset" />
-        <img loading="lazy" className="sunset-2" src={sunset2} alt="second image of sunset" />
+        </div>
+        <img
+          loading="lazy"
+          className="sunset-1 sunset"
+          src={sunset}
+          alt="image of sunset"
+        />
+        <img
+          loading="lazy"
+          className="sunset-2 sunset"
+          src={sunset2}
+          alt="second image of sunset"
+        />
       </div>
+      {/* Wave Layer */}
       <div className="svg layer-1"></div>
+      {/* Second Body */}
       <div className="home-second-body">
         <div className="second-body-content">
           <h1>Discover Our Work</h1>
@@ -57,14 +87,8 @@ export const Home = () => {
           </Link>
         </div>
       </div>
+      {/* Third Body */}
       <div className="home-third-body">
-        <div>
-          <h1>Marine Services & Management</h1>
-          <h2>We get every job done right</h2>
-        </div>
-      </div>
-      <div className="svg layer-2"></div>
-      <div className="home-fourth-body">
         <div className="text-box">
           <h1>Why choose Marine Services & Management</h1>
           <p>
@@ -73,16 +97,41 @@ export const Home = () => {
           </p>
           <button>Check Out Services</button>
         </div>
-        <img loading="lazy" className="normal-img" src={boat} alt="" />
-        <img loading="lazy" className="square-design" src={squaresOne} alt="" />
+        <img loading="lazy" className="normal-img" src={boatFront} alt="" />
       </div>
+      {/* Second Wave Layer */}
+      <div className="svg layer-2"></div>
+      {/* Fourth Body */}
+      <div className="home-fourth-body">
+        <div className="fourth-header">
+          <h1>Get To Know Us</h1>
+          <h2>
+            Marine Services and Management has been committed to delivering
+            top-tier marine services. Our highly skilled team excels in
+            comprehensive boat maintenance and repair, specializing in outboard
+            engines and electrical systems to keep your vessel running smoothly
+            and reliably.
+          </h2>
+        </div>
+        <div className="body-main">
+          <img src={boatBack} alt="" />
+          <div className="body-text">
+            <p>
+              Interested in working with us? Reach out for pricing or questions
+              for any of our services.
+            </p>
+            <button>Contact Us</button>
+          </div>
+        </div>
+      </div>
+      {/* Fifth Body */}
       <div className="home-fifth-body">
-        <h1>Reviews tell the truth</h1>
+        <h1 className="fifth-h1">Reviews Tell the Truth</h1>
         <div className="review-boxes">
           <div className="review-box">
-            <h2>First Last</h2>
-            <img loading="lazy" className="pfl-pic" src={sunset2} alt="" />
-            <p>"The best team I've ever worked with"</p>
+            <h2>James Lenn</h2>
+            <img loading="lazy" className="pfl-pic" src={james} alt="" />
+            <p>"They made my boating experience amazing with their professionalism and reliability."</p>
             <div className="star-box">
               <img loading="lazy" src={star} alt="" />
               <img loading="lazy" src={star} alt="" />
@@ -92,9 +141,9 @@ export const Home = () => {
             </div>
           </div>
           <div className="review-box">
-            <h2>First Last</h2>
-            <img loading="lazy" className="pfl-pic" src={sunset2} alt="" />
-            <p>"The best team I've ever worked with"</p>
+            <h2>Midas Hawke</h2>
+            <img loading="lazy" className="pfl-pic" src={midas} alt="" />
+            <p>"I've recieved consistent top-notch service, ensuring my boat is always ready for trips."</p>
             <div className="star-box">
               <img loading="lazy" src={star} alt="" />
               <img loading="lazy" src={star} alt="" />
@@ -104,11 +153,8 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <img loading="lazy" className="square-design-two" src={squaresTwo} alt="" />
       </div>
-      <div className="home-sixth-body">
-
-      </div>
+      </ Layout>
     </>
   );
 };

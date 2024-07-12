@@ -1,16 +1,29 @@
+// Layout
+import { Layout } from "../components/layout";
+
+// Styles
 import "../styles/about.css";
-import { Navbar } from "../components/navbar";
+
+// Images
 import Guys from "../assets/imgs/Guys-With-Fish.png";
 import Squarefour from "../assets/other-imgs/Square-Img-4.png";
 
+// Gsap
+import { aboutAnimation } from "../animation/aboutAnimation";
+import { useEffect } from "react";
+
 export const About = () => {
+  useEffect(() => {
+    aboutAnimation()
+  }, []);
+
   return (
     <>
-      <Navbar />
+      <Layout >
       <div className="about-main">
         <div className="f-content">
-          <h1>Learn About Us</h1>
-          <h2>
+          <h1 className="h1-text">Learn About Us</h1>
+          <h2 className="h2-text">
             Marine Services and Management has been dedicated to providing
             exceptional boat care and maintenance for over 20 years. Our team of
             Mercury-certified technicians specializes in servicing and
@@ -19,8 +32,8 @@ export const About = () => {
           </h2>
         </div>
         <div className="s-content">
-          <img src={Guys} alt="" />
-          <h3>
+          <img className="image" src={Guys} alt="" />
+          <h3 className="h3-text">
             With decades of experience and a commitment to excellence, we offer
             comprehensive engine maintenance and repair services to keep your
             boat running smoothly and reliably. Trust Marine Services and
@@ -29,9 +42,10 @@ export const About = () => {
           </h3>
         </div>
         <div className="squares">
-          <img src={Squarefour} alt="" />
+          <img className="squares-four" src={Squarefour} alt="" />
         </div>
       </div>
+      </ Layout>
     </>
   );
 };

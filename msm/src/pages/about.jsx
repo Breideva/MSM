@@ -5,14 +5,14 @@ import { Layout } from "../components/layout";
 import "../styles/about.css";
 
 // Images
-import Guys from "../assets/imgs/Guys-With-Fish.png";
+import Guys from "../assets/imgs/Guys-With-Fish.avif";
 import Squarefour from "../assets/other-imgs/Square-Img-4.png";
 
 // Gsap
 import { aboutAnimation } from "../animation/aboutAnimation";
 import { useEffect } from "react";
 
-export const About = () => {
+const About = () => {
   useEffect(() => {
     aboutAnimation()
   }, []);
@@ -32,7 +32,7 @@ export const About = () => {
           </h2>
         </div>
         <div className="s-content">
-          <img className="image" src={Guys} alt="" />
+          <img className="image" src={Guys} alt="Two guys with catch of fish" />
           <h3 className="h3-text">
             With decades of experience and a commitment to excellence, we offer
             comprehensive engine maintenance and repair services to keep your
@@ -42,10 +42,12 @@ export const About = () => {
           </h3>
         </div>
         <div className="squares">
-          <img className="squares-four" src={Squarefour} alt="" />
+          <img className="squares-four" src={Squarefour} alt="colorful squares" />
         </div>
       </div>
       </ Layout>
     </>
   );
 };
+
+export default About

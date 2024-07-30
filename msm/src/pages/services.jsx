@@ -8,13 +8,14 @@ import { Layout } from "../components/layout";
 import "../styles/services.css";
 
 // Images
-import { CheckCircle } from "phosphor-react";
+// import { CheckCircle } from "phosphor-react";
+import CheckCircle from "../assets/other-imgs/check-circle.avif"
 
 // Gsap
 import { servicesAnimation } from "../animation/servicesAnimation";
 import { useEffect } from "react";
 
-export const Services = () => {
+ const Services = () => {
   useEffect(() => {
     servicesAnimation();
   }, []);
@@ -40,7 +41,7 @@ export const Services = () => {
               <h2>Boat Watch</h2>
             </a>
             <a href="#tech" className="sidebar-link">
-              <h2>Mercury Tech</h2>
+              <h2>Mercury Techs</h2>
             </a>
           </div>
         </div>
@@ -52,8 +53,8 @@ export const Services = () => {
           </div>
           <div className="services">
             <div className="services-title">
-              <CheckCircle className="check" />
-              <Link to="/usgc-captains" class="title-link">
+              <img src={CheckCircle} className="check" />
+              <Link to="/usgc-captains" className="title-link">
                 <h3 id="detail">USGC Captains</h3>
               </Link>
             </div>
@@ -65,8 +66,8 @@ export const Services = () => {
               needs.
             </p>
             <div className="services-title">
-              <CheckCircle className="check" />
-              <Link to="/detailing" class="title-link">
+            <img src={CheckCircle} className="check" />
+            <Link to="/detailing" className="title-link">
                 <h3 id="hull">Detailing</h3>
               </Link>
             </div>
@@ -77,8 +78,8 @@ export const Services = () => {
               your boat.
             </p>
             <div className="services-title">
-              <CheckCircle className="check" />
-              <Link to="/hull-bottom-cleaning" class="title-link">
+            <img src={CheckCircle} className="check" />
+            <Link to="/hull-bottom-cleaning" className="title-link">
                 <h3 id="monthly">Hull/Bottom Cleaning</h3>
               </Link>
             </div>
@@ -89,8 +90,8 @@ export const Services = () => {
               smooth and safe ride.
             </p>
             <div className="services-title">
-              <CheckCircle className="check" />
-              <Link to="/monthly-management-plans" class="title-link">
+            <img src={CheckCircle} className="check" />
+            <Link to="/monthly-management-plans" className="title-link">
                 <h3 id="boat">Monthly Management Plans</h3>
               </Link>
             </div>
@@ -101,8 +102,8 @@ export const Services = () => {
               peace of mind for all your boating adventures.
             </p>
             <div className="services-title">
-              <CheckCircle className="check" />
-              <Link to="/boat-watch" class="title-link">
+            <img src={CheckCircle} className="check" />
+            <Link to="/boat-watch" className="title-link">
                 <h3 id="tech">Boat Watch</h3>
               </Link>
             </div>
@@ -113,8 +114,8 @@ export const Services = () => {
               integrity and readiness for smooth sailing.
             </p>
             <div className="services-title">
-              <CheckCircle className="check" />
-              <Link to="/mercury-techs" class="title-link">
+            <img src={CheckCircle} className="check" />
+            <Link to="/mercury-techs" className="title-link">
                 <h3>Mercury Techs</h3>
               </Link>
             </div>
@@ -131,3 +132,4 @@ export const Services = () => {
     </>
   );
 };
+export default Services

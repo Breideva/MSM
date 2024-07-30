@@ -1,11 +1,13 @@
-import sunset from "../../assets/imgs/sunset.png";
-import sunsetTwo from "../../assets/imgs/sunset-2.png";
+import sunset from "../../assets/imgs/sunset.avif";
+import sunsetTwo from "../../assets/imgs/sunset-2.avif";
 import "../../styles/Services/service-pages.css"
 import { Layout } from "../../components/layout";
 import { servicePageAnimation } from "../../animation/servicePagesAnimation";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-export const Hull = () => {
+
+ const Hull = () => {
   useEffect(() => {
     servicePageAnimation();
   }, []);
@@ -31,12 +33,14 @@ export const Hull = () => {
         </div>
         <div className="ser-body s-body">
           <div className="content cont-2">
-            <h2>
+            <h3>
               Regular hull cleaning not only protects your valuable investment
               but also significantly enhances the safety and enjoyment of your
               boating experience.
-            </h2>
+            </h3>
+            <Link to="/contact">
             <button>Learn More</button>
+            </Link>
           </div>
 
           <img className="page-img-2" src={sunsetTwo} alt="" />
@@ -46,3 +50,4 @@ export const Hull = () => {
     </>
   );
 };
+export default Hull;

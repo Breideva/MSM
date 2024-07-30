@@ -1,11 +1,12 @@
-import sunset from "../../assets/imgs/sunset.png";
-import sunsetTwo from "../../assets/imgs/sunset-2.png";
+import sunset from "../../assets/imgs/sunset.avif";
+import sunsetTwo from "../../assets/imgs/sunset-2.avif";
 import "../../styles/Services/service-pages.css"
 import { Layout } from "../../components/layout";
 import { servicePageAnimation } from "../../animation/servicePagesAnimation";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-export const Watch = () => {
+const Watch = () => {
   useEffect(() => {
     servicePageAnimation();
   }, []);
@@ -36,7 +37,9 @@ export const Watch = () => {
               secure mooring, we provide thorough care so your boat is always
               ready for your next adventure.
             </h3>
+            <Link to="/contact">
             <button>Learn More</button>
+            </Link>
           </div>
 
           <img className="page-img-2" src={sunsetTwo} alt="" />
@@ -46,3 +49,4 @@ export const Watch = () => {
     </>
   );
 };
+export default Watch;

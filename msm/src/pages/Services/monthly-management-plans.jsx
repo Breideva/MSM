@@ -1,11 +1,13 @@
-import sunset from "../../assets/imgs/sunset.png";
-import sunsetTwo from "../../assets/imgs/sunset-2.png";
+import sunset from "../../assets/imgs/sunset.avif";
+import sunsetTwo from "../../assets/imgs/sunset-2.avif";
 import "../../styles/Services/service-pages.css"
 import { Layout } from "../../components/layout";
 import { servicePageAnimation } from "../../animation/servicePagesAnimation";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-export const Management = () => {
+
+ const Management = () => {
   useEffect(() => {
     servicePageAnimation();
   }, []);
@@ -34,11 +36,11 @@ export const Management = () => {
             <h3>
               Count on our comprehensive monthly boat management plans to
               maintain peak performance and reliability, tailored to meet the
-              unique needs of your vessel.
+              unique needs of your boat.
             </h3>
+            <Link to="/contact">
             <button>Learn More</button>
-          </div>
-
+            </Link>          </div>
           <img className="page-img-2" src={sunsetTwo} alt="" />
         </div>
       </div>
@@ -46,3 +48,4 @@ export const Management = () => {
     </>
   );
 };
+export default Management;

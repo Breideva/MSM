@@ -9,12 +9,12 @@ export const homeAnimation = () => {
   tl.to(".home-header", {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     duration: 1,
-    ease: "power1.in",
+    ease: "power1.out",
   })
     .to(".header-h1", {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      duration: 1.8,
-      ease: "power3.in",
+      opacity: 1,
+      duration: 1.2,
+      ease: "power1.out",
     })
     .to(".header-h3", {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
@@ -39,7 +39,7 @@ export const homeAnimation = () => {
   });
   gsap.to(".first-content", {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-    duration: 1.5,
+    duration: .8,
     ease: "power1.inOut",
     scrollTrigger: {
       trigger: ".first-content",
@@ -76,7 +76,7 @@ export const homeAnimation = () => {
   // Fourth Body
   gsap.to(".fourth-header", {
     opacity: 1,
-    duration: 2,
+    duration: 1.5,
     scrollTrigger: {
       trigger: ".fourth-header",
       start: "top center",
@@ -84,7 +84,7 @@ export const homeAnimation = () => {
   });
   gsap.to(".body-main", {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-    duration: 4,
+    duration: 2,
     scrollTrigger: {
       trigger: ".body-text",
       start: "top bottom",
@@ -92,7 +92,7 @@ export const homeAnimation = () => {
   });
   // Fifth Body
 
-  gsap.to(".fifth-h1", {
+  gsap.to(".home-heading", {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     duration: .5,
     delay: 1,

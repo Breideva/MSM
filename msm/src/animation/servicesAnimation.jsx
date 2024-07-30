@@ -6,23 +6,23 @@ export const servicesAnimation = () => {
 
   let tl = gsap.timeline({});
   
-  tl.to(".serv-title", {
+  tl.to(".services-header", {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-    duration: 1,
-      ease: "power3.in",
+    duration: .8,
+      ease: "power1.in",
 })
 .to(".services-title", {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-    duration: 2,
+    duration: 1,
     ease: "power1.out",
 })
 .to(".serv-para", {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-    duration: 1.5,
+    duration: 1,
 }, 1)
 .to(".sidebar-link", {
     opacity:1,
-    duration: 1,
+    duration: .5,
     ease: "power1.out",
   }, 1.5)
   

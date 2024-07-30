@@ -1,26 +1,20 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export const contactAnimation = () => {
+export const faqAnimation = () => {
 
   gsap.registerPlugin(ScrollTrigger);
 
     let tl = gsap.timeline({});
 
-    tl.to(".contact-header", {
+    tl.to(".faq-header", {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      duration: .8,
+      duration: .4,
       ease: "power1.in",
     })
-    .to(".box-contact", {
+    .to(".faq-box", {
         opacity: 1,
         duration: .5,
       ease: "power1.in",
     })
-    .to(".btn-box", {
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        duration: 1.5,
-    }, 1.5);
-    
-    
 }

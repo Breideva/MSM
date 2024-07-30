@@ -8,8 +8,8 @@ export const servicePageAnimation = () => {
 
   tl.to(".page-h1", {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-    duration: 1,
-    ease: "power3.in",
+    duration: .8,
+    ease: "power1.in",
   })
     .to(".cont-1", {
       opacity: 1,

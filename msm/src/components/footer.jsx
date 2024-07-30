@@ -1,40 +1,50 @@
+// Router Links
 import { Link } from "react-router-dom";
-import "../styles/footer.css";
-import logo from "../assets/other-imgs/Logo.png";
-import { TwitterLogo, InstagramLogo, SnapchatLogo } from "phosphor-react";
-import layeredWave from "../assets/other-imgs/blurry-gradient-haikei.svg"
+
+// Styles
+import "../styles/Components/footer.css";
+
+// Images
+// import { TwitterLogo, InstagramLogo, SnapchatLogo, FacebookLogo } from "phosphor-react";
+import Logo from "../assets/other-imgs/Logo.png";
 
 export const Footer = () => {
   return (
     <>
-      <div className="footer-main main-bck-img">
+      <div className="footer-main ">
       <a href="/">
-              <img className="logo-img" src={logo} alt="logo" />
+              <img className="logo-img" src={Logo} alt="logo" />
               </a>
         <div className="footer-content">
           <div className="info-content">
-            <a href=""><h2>msm.239.305.@gmail.com</h2></a>
-            <h2>Naples, FL</h2>
-            <h2>239-994-3213</h2>
+            <h2>Email:</h2>
+            <a className="mail" href="mailto:MarineServicesAndManagement@msmboatcare.com"><h4>MarineServicesAndManagement@msmboatcare.com</h4></a>
+            <h2>Loaction:</h2>
+            <h4>Naples, FL</h4>
+            <h2>Phone Number:</h2>
+            <h4>239-994-3213</h4>
           </div>
           <div className="links-content">
             <div className="social-media">
               <a href="">
-                <TwitterLogo className="sm-logo"/>
+                {/* <TwitterLogo className="sm-logo"/> */}
               </a>
               <a href="">
-                <InstagramLogo className="sm-logo"/>
+                {/* <FacebookLogo className="sm-logo"/> */}
               </a>
               <a href="">
-                <SnapchatLogo className="sm-logo"/>
+                {/* <InstagramLogo className="sm-logo"/> */}
+              </a>
+              <a href="">
+                {/* <SnapchatLogo className="sm-logo"/> */}
               </a>
             </div>
             <div className="important">
-              <Link className="imp-link">
+              <Link to="/privacy" className="imp-link">
                 <h2>Privacy</h2>
               </Link>
               <h3>|</h3>
-              <Link className="imp-link">
+              <Link to="/terms" >
                 <h2>Terms and Conditions</h2>
               </Link>
             </div>

@@ -1,7 +1,12 @@
-import "../styles/navbar.css";
+// Router Links
 import { Link } from "react-router-dom";
-import logo from "../assets/other-imgs/Logo.png";
 import { useLocation } from "react-router-dom";
+
+// Styles
+import "../styles/Components/navbar.css";
+
+// Images
+import logo from "../assets/other-imgs/Logo.png";
 
 export const Navbar = () => {
   const location = useLocation();
@@ -36,8 +41,8 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className="list-item" to="/projects">
-              Projects
+            <Link className="list-item" to="/faq">
+              FAQ
             </Link>
           </li>
         </ul>

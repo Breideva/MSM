@@ -1,23 +1,20 @@
+
 .footer-main {
-    padding:clamp(20px, 4vw, 200px);
+    padding:clamp(20px, 2vw, 200px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     row-gap: 2vw;
     border-top: solid 1px #788693;
+    background-color: #c9c5b4;
+    
 }
 .footer-main a {
     text-decoration: none;
 }
-.main-bck-img {
-    background-color: #c9c5b4;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .footer-main .logo-img {
-    width: clamp(40px,15vw, 500px);
+    width: clamp(100px,10vw, 750px);
 }
 .footer-content {
    display: flex;
@@ -25,22 +22,30 @@
    align-items: center;
    text-align: center;
    border-radius: 10px 10px 0 0;
-   row-gap: 2vw;
 }
-.info-content h2 {
+.info-content h2, h4 {
     font-size: clamp(15px,1.5vw, 70px);
     color: #1a1b2b;
     font-weight: 400;
+    margin: 0 0 clamp(2px, 1vw, 12px) 0;
+}
+.info-content .mail {
+    text-decoration: underline;
+    color:#1a1b2b;
+}
+.mail:hover {
+    color: #3e629d;
+}
+.info-content h4 {
+    margin-bottom: clamp(15px, 2.2vw, 40px);
+    font-size: clamp(10px,1vw, 50px);
 }
 .links-content .important {
     display: flex;
-
 }
-
 .links-content p {
     font-size: clamp(6px,.6vw, 70px);
     color:#1a1b2b
-
 }
 .important h2 {
     font-size: clamp(10px,1.2vw, 70px);
@@ -48,7 +53,7 @@
 }
 .important h3 {
     font-size: clamp(10px,1.2vw, 70px);
-    color:#1a1b2b
+    color:#1a1b2b;
 }
 .important .imp-link {
     text-decoration: none;

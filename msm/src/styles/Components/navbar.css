@@ -1,3 +1,4 @@
+
 .nav {
   background-color: #e0ddcf;
   padding: 1vh 0;
@@ -5,6 +6,9 @@
   position: fixed;
   width: 100%;
   z-index: 5;
+  font-family: "Koh Santepheap";
+  overflow-x: hidden;
+  padding-right: clamp(10px, 5%, 20px);
 }
 .nav-items {
   display: flex;
@@ -12,20 +16,20 @@
   align-items: center;
   justify-content: center;
   list-style-type: none;
-  gap: 2vw;
+  gap: clamp(20px, 2vw, 100px);
 }
 .nav-items li {
-  font-size: 1.6vw;
+  font-size: clamp(12px, 1.6vw, 50px);
 }
 .nav-items .list-item {
   text-decoration: none;
   color: #1a1b2b;
+  transition: color .3s linear;
 }
 .nav-items .list-item:hover {
-    color: #788693;
-    transition: color .3s linear;
+    color: rgb(26, 27, 43, 0.6);
 }
 .nav img {
-  width: 8vw;
+  width: clamp(60px, 8vw, 125px);
   height: auto;
 }

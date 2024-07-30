@@ -1,20 +1,26 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Home } from './pages/home';
-import { Services } from './pages/services';
-import { Contact } from './pages/contact';
-import { About } from './pages/about';
-import { Projects } from './pages/projects';
-import { Usgc } from './pages/Services/usgc-captains';
-import { Detail } from './pages/Services/detailing';
-import { Hull } from './pages/Services/hull-bottom-cleaning';
-import { Management } from './pages/Services/monthly-management-plans';
-import { Watch } from './pages/Services/boat-watch';
-import { Mercury } from './pages/Services/mercury-techs';
-import { First } from './pages/Projects/first';
-import { Second } from './pages/Projects/second';
-import { Third } from './pages/Projects/third';
-import { Fourth } from './pages/Projects/fourth';
+import { lazy, Suspense } from 'react';
+import "../src/styles/home.css"
+
+//Mains
+const Home = lazy(() => import("./pages/home"))
+const Contact = lazy(() => import("./pages/contact"))
+const About = lazy(() => import("./pages/about"))
+const Services = lazy(() => import("./pages/services"))
+const Faq = lazy(() => import("./pages/faq"))
+
+//Services
+const Usgc = lazy(() => import('./pages/Services/usgc-captains'));
+const Detail = lazy(() => import('./pages/Services/detailing'));
+const Hull = lazy(() => import('./pages/Services/hull-bottom-cleaning'));
+const Management = lazy(() => import('./pages/Services/monthly-management-plans'));
+const Watch = lazy(() => import('./pages/Services/boat-watch'));
+const Mercury = lazy(() => import('./pages/Services/mercury-techs'));
+
 import { ScrollToTop } from './components/scrolltotop';
+import { Terms } from './pages/Legal/terms';
+import { Privacy } from './pages/Legal/privacy';
+
 
 function App() {
 
@@ -23,7 +29,12 @@ function App() {
     <>
       <Router>
         < ScrollToTop />
+        <Suspense fallback={
+          <div className='loading'>
+            <h5>Loading...</h5>
+          </div>}>
         <Routes>
+
           <Route path="/" element={<Home />}></Route>
           <Route path="contact" element={<Contact />}></Route>
           <Route path="about" element={<About />}></Route>
@@ -37,14 +48,12 @@ function App() {
           <Route path='boat-watch' element={<Watch />}></Route>
           <Route path='mercury-techs' element={<Mercury />}></Route>
           {/* Projects */}
-          <Route path="projects" element={<Projects />}></Route>
-          {/* Project Pages */}
-          <Route path="first" element={<First />}></Route>
-          <Route path="second" element={<Second />}></Route>
-          <Route path="third" element={<Third />}></Route>
-          <Route path="fourth" element={<Fourth />}></Route>
-
+          <Route path="faq" element={<Faq />}></Route>
+          
+          <Route path="terms" element={<Terms />}></Route>
+          <Route path="privacy" element={<Privacy />}></Route>
         </Routes>
+        </Suspense>
       </Router>
     </>
   )

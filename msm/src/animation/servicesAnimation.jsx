@@ -7,23 +7,25 @@ export const servicesAnimation = () => {
   let tl = gsap.timeline({});
   
   tl.to(".services-header", {
-    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-    duration: .8,
-      ease: "power1.in",
+    opacity: 1,
+    translateX: 0,
+    duration: .5,
 })
 .to(".services-title", {
-    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-    duration: 1,
+  opacity: 1,
+  translateY: 0,
+    duration: .5,
     ease: "power1.out",
 })
 .to(".serv-para", {
-    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-    duration: 1,
-}, 1)
+    opacity: 1,
+    translateY: 0,
+      duration: .5,
+}, .8)
 .to(".sidebar-link", {
     opacity:1,
     duration: .5,
     ease: "power1.out",
-  }, 1.5)
+  }, 1)
   
 }

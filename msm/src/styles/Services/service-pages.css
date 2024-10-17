@@ -16,7 +16,8 @@
   padding-bottom: 2vw;
 }
 .service-pages-main .page-h1 {
-  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transform: translateX(-75px);
+    opacity: 0;
 }
 .service-pages-main .ser-body {
   display: flex;
@@ -28,6 +29,7 @@
   flex-direction: column;
   align-items: start;
   opacity: 0;
+  transform: translateY(75px);
 }
 .f-body {
   margin-bottom: clamp(20px, 2.5vw, 100px);
@@ -69,11 +71,12 @@
   border: #3e629d solid 5px;
 }
 .page-img-1 {
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  opacity: 0;
+
 }
 .page-img-2 {
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-
+  opacity: 0;
+  transform: translateY(75px);
 }
 .service-pages-main button {
   font-size: clamp(10px, 2vw, 50px);

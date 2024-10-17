@@ -18,15 +18,16 @@
   font-size: clamp(45px, 6vw, 150px);
   color: #1a1b2b;
   line-height: clamp(45px, 6.5vw, 150px);
-  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transform: translateX(-75px);
+  opacity: 0;
 }
 .f-content h2 {
   font-size: clamp(15px,2.5vw, 70px);
   color: #1a1b2b;
   font-weight: 400;
   padding-top: 1vw;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-
+  transform: translateY(75px);
+  opacity: 0;
 }
 .about-main .s-content {
     display: flex;

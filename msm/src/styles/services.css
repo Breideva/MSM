@@ -10,10 +10,11 @@
     display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    row-gap: 2vw;
     border-left: 1px #788693 solid;
     height: 100vh;
-    margin-top: clamp(35px, 5vw, 50px);
+    margin-top: clamp(35px, 10vw, 100px);
 }
 .sidebar-link {
     text-decoration: none;
@@ -45,12 +46,13 @@
     display: flex;
     justify-content: start;
     width: clamp(325px, 60%, 2000px);
-    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    transform: translateX(-100px);
+    opacity: 0;
 }
 .services-content h1 {
     font-size: clamp(45px, 6vw, 150px);
     color: #1a1b2b;
-    line-height: 6.5vw;
+    overflow: hidden;
 }
 .services {
     background-color: #788693;
@@ -60,7 +62,8 @@
 .services-title {
     display: flex;
     align-items: center;
-    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    transform: translateY(75px);
+    opacity: 0;
 }
 .services-title .title-link {
     text-decoration: none;
@@ -71,7 +74,7 @@
 .services h3 {
     font-size: clamp(14px, 3vw, 110px);
     color: #1a1b2b;
-    transition: all .5s ease-out;
+    transition: all .2s ease-out;
 }
 .services h3:hover {
     color:#E0DDCF;
@@ -84,5 +87,6 @@
     width: clamp(20px, 50vw, 1000px);
 }
 .services .serv-para {
-    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    transform: translateY(75px);
+    opacity: 0;
 }

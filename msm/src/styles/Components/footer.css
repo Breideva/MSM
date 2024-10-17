@@ -55,8 +55,9 @@
     font-size: clamp(10px,1.2vw, 70px);
     color:#1a1b2b;
 }
-.important .imp-link {
+.important h2 {
     text-decoration: none;
+    transition: all .3s linear;
 }
 .important h2:hover {
     color: #3e629d;

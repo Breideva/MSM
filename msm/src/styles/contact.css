@@ -15,7 +15,6 @@
   z-index: 1;
   bottom: clamp(40px, 5%, 45px);
 }
-
 .contact-content {
   display: flex;
   flex-direction: column;
@@ -23,7 +22,8 @@
 .contact-header {
   display: flex;
   justify-content: center;
-  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transform: translateX(-75px);
+  opacity: 0;
 }
 .contact-main h1 {
   font-size: clamp(45px, 6vw, 150px);
@@ -41,19 +41,20 @@
   border-radius: 10px;
   color: #1a1b2b;
   border: 1px solid #1a1b2b;
+  border-bottom: 2px solid #1a1b2b;
   width: 100%;
   padding: 15px 5px;
   font-size: clamp(12px, 1.2vw, 125px);
   font-weight: 300;
   margin-bottom: clamp(15px, 1.5vw, 45px);
   background-color:rgb(255, 255, 255);
-
   outline: none;
 }
 .contact-content textarea {
   border-radius: 10px;
   color: #1a1b2b;
   border: 1px solid #1a1b2b;
+  border-bottom: 2px solid #1a1b2b;
   width: 100%;
   padding: 10px 5px;
   font-size: clamp(12px, 1.2vw, 125px);
@@ -61,7 +62,8 @@
   margin-bottom: clamp(15px, 1.5vw, 45px);
   outline: none;
 }
-.contact-content input:focus {
+.contact-content input:focus,
+textarea:focus {
   border-bottom: 2px solid #3e629d;
 }
 .box-contact {
@@ -70,6 +72,7 @@
   grid-template-rows: auto auto;
   column-gap: clamp(20px, 2vw, 40px);
   z-index: 2;
+  transform: translateY(75px);
   opacity: 0;
 }
 .box-contact .last-box {
@@ -95,9 +98,9 @@
   cursor: pointer;
   font-weight: bold;
   background-color: #3e629d;
+  transition: all 1s ease-out;
 }
 .contact-content button:hover {
   color: #1a1b2b;
   background-color: #e0ddcf;
-  transition: all 1s ease-out;
 }

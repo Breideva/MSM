@@ -8,9 +8,9 @@ export const faqAnimation = () => {
     let tl = gsap.timeline({});
 
     tl.to(".faq-header", {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      duration: .4,
-      ease: "power1.in",
+      opacity: 1,
+    translateX: 0,
+    duration: 0.5,
     })
     .to(".faq-box", {
         opacity: 1,

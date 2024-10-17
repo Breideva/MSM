@@ -8,19 +8,19 @@ export const contactAnimation = () => {
     let tl = gsap.timeline({});
 
     tl.to(".contact-header", {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      duration: .8,
-      ease: "power1.in",
+      opacity: 1,
+    translateX: 0,
+    duration: 0.5,
     })
     .to(".box-contact", {
-        opacity: 1,
-        duration: .5,
-      ease: "power1.in",
+      opacity: 1,
+      translateY: 0,
+      duration: 0.5,
     })
     .to(".btn-box", {
         clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
         duration: 1.5,
-    }, 1.5);
+    }, .5);
     
     
 }

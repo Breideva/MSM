@@ -10,11 +10,11 @@ import "../styles/home.css";
 // Images
 import Sunset from "../assets/imgs/sunset.avif";
 import Sunset2 from "../assets/imgs/sunset-2.avif";
-import Star from "../assets/other-imgs/Star.png";
 import BoatFront from "../assets/imgs/boat-front.avif";
 import BoatBack from "../assets/imgs/back-of-boat.avif";
 import Midas from "../assets/imgs/Midas-prfl.png";
 import James from "../assets/imgs/James-prfl.png";
+import Fishing2 from "../assets/imgs/Fishing-4.avif";
 
 // Gsap
 import { homeAnimation } from "../animation/homeAnimation";
@@ -80,34 +80,38 @@ const Home = () => {
           />
         </div>
         {/* Wave Layer */}
-        <div className="svg layer-1"></div>
+        <div className="wave-1">
+          <div className="svg layer-1"></div>
+        </div>
         {/* Second Body */}
         <div className="home-second-body">
           <div className="second-body-content">
-            <h1>Need Some Answers?</h1>
+            <h1 className="second-body-header">Need Some Answers?</h1>
             <Link to="/faq">
-              <button>View FAQ</button>
+              <button className="second-body-button">View FAQ</button>
             </Link>
           </div>
         </div>
         {/* Third Body */}
         <div className="home-third-body">
-          <div className="text-box">
-            <h1>Why choose Marine Services & Management</h1>
-            <p>
-              Choose us for expert boat care and exceptional service. We ensure
-              your boat performs at its best.
-            </p>
-            <Link to="/services">
-              <button>Check Out Services</button>
-            </Link>
+          <div className="home-third-content">
+            <div className="text-box">
+              <h1>Why choose Marine Services & Management</h1>
+              <p>
+                Choose us for expert boat care and exceptional service. We
+                ensure your boat performs at its best.
+              </p>
+              <Link to="/services">
+                <button>Check Out Services</button>
+              </Link>
+            </div>
+            <img
+              loading="lazy"
+              className="normal-img"
+              src={BoatFront}
+              alt="Front of a boat"
+            />
           </div>
-          <img
-            loading="lazy"
-            className="normal-img"
-            src={BoatFront}
-            alt="Front of a boat"
-          />
         </div>
         {/* Second Wave Layer */}
         <div className="svg layer-2"></div>
@@ -124,7 +128,7 @@ const Home = () => {
             </h2>
           </div>
           <div className="body-main">
-            <img src={BoatBack} alt="Back of a boat" />
+            <img src={Fishing2} alt="Back of a boat" />
             <div className="body-text">
               <p>
                 Interested in working with us? Reach out for pricing or
@@ -140,23 +144,27 @@ const Home = () => {
         <div className="home-fifth-body">
           <div className="home-heading">
             <h1 className="fifth-h1">Reviews Tell the Truth</h1>
-            <p>We've had the pleasure of working with a diverse array of clients, and their reviews highlight the quality of our service.</p>
+            <p>
+              We've had the pleasure of working with a diverse array of clients,
+              and their reviews highlight the quality of our service.
+            </p>
           </div>
           <div className="review-boxes-scroll">
             <div className="review-boxes">
               <ReviewBox
-                name="Midas Hawke"
+                name="Ethan Caldwell"
+                position="Workhand for BoatMotor NT"
                 imageSrc={Midas}
                 reviewText="I've received consistent amazing service, they've always ensured my boat is ready for trips and taken care of."
                 stars={5}
               />
               <ReviewBox
-                name="James Lenn"
+                name="Alex Hayes"
+                position="Product Manager at FFC"
                 imageSrc={James}
                 reviewText="Their detailing work has helped make my boat look immaculate. Their attention to detail is unmatched."
                 stars={5}
               />
-              
             </div>
           </div>
         </div>

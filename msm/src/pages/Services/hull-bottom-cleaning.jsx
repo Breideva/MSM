@@ -1,5 +1,5 @@
-import sunset from "../../assets/imgs/sunset.avif";
-import sunsetTwo from "../../assets/imgs/sunset-2.avif";
+import Engine from "../../assets/imgs/IMG_2569.avif";
+import Boat from "../../assets/imgs/IMG_1260.avif";
 import "../../styles/Services/service-pages.css"
 import { Layout } from "../../components/layout";
 import { servicePageAnimation } from "../../animation/servicePagesAnimation";
@@ -29,7 +29,7 @@ import { Link } from "react-router-dom";
             </h2>
           </div>
 
-          <img className="page-img-1" src={sunset} alt="" />
+          <img className="page-img-1" src={Engine} alt="" />
         </div>
         <div className="ser-body s-body">
           <div className="content cont-2">
@@ -43,7 +43,7 @@ import { Link } from "react-router-dom";
             </Link>
           </div>
 
-          <img className="page-img-2" src={sunsetTwo} alt="" />
+          <img className="page-img-2" src={Boat} alt="" />
         </div>
       </div>
       </Layout>

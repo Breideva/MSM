@@ -9,13 +9,13 @@ import "../styles/services.css";
 
 // Images
 // import { CheckCircle } from "phosphor-react";
-import CheckCircle from "../assets/other-imgs/check-circle.avif"
+import CheckCircle from "../assets/other-imgs/check-circle.avif";
 
 // Gsap
 import { servicesAnimation } from "../animation/servicesAnimation";
 import { useEffect } from "react";
 
- const Services = () => {
+const Services = () => {
   useEffect(() => {
     servicesAnimation();
   }, []);
@@ -41,7 +41,7 @@ import { useEffect } from "react";
               <h2>Boat Watch</h2>
             </a>
             <a href="#tech" className="sidebar-link">
-              <h2>Mercury Techs</h2>
+              <h2>Marine Techs</h2>
             </a>
           </div>
         </div>
@@ -66,20 +66,24 @@ import { useEffect } from "react";
               needs.
             </p>
             <div className="services-title">
-            <img src={CheckCircle} className="check" />
-            <Link to="/detailing" className="title-link">
+              <img src={CheckCircle} className="check" />
+              <Link to="/detailing" className="title-link">
                 <h3 id="hull">Detailing</h3>
               </Link>
             </div>
             <p className="serv-para">
-              Our detailing team delivers meticulous care, ensuring your vessel
-              shines with pristine cleanliness and protection. Using premium
-              products and techniques, we enhance the beauty and longevity of
-              your boat.
+              We offer comprehensive interior and exterior detailing services.
+              For the interior, we vacuum your carpets thoroughly and use an
+              extractor to deep-clean and remove any stains from the seats and
+              carpets. On the exterior, we provide a meticulous deep wash,
+              followed by a clay bar treatment to eliminate surface
+              contaminants. We also offer premium waxing and protective
+              coatings, ranging from 3-month waxes to durable coatings lasting
+              up to 3 years.
             </p>
             <div className="services-title">
-            <img src={CheckCircle} className="check" />
-            <Link to="/hull-bottom-cleaning" className="title-link">
+              <img src={CheckCircle} className="check" />
+              <Link to="/hull-bottom-cleaning" className="title-link">
                 <h3 id="monthly">Hull/Bottom Cleaning</h3>
               </Link>
             </div>
@@ -90,8 +94,8 @@ import { useEffect } from "react";
               smooth and safe ride.
             </p>
             <div className="services-title">
-            <img src={CheckCircle} className="check" />
-            <Link to="/monthly-management-plans" className="title-link">
+              <img src={CheckCircle} className="check" />
+              <Link to="/monthly-management-plans" className="title-link">
                 <h3 id="boat">Monthly Management Plans</h3>
               </Link>
             </div>
@@ -102,29 +106,29 @@ import { useEffect } from "react";
               peace of mind for all your boating adventures.
             </p>
             <div className="services-title">
-            <img src={CheckCircle} className="check" />
-            <Link to="/boat-watch" className="title-link">
+              <img src={CheckCircle} className="check" />
+              <Link to="/boat-watch" className="title-link">
                 <h3 id="tech">Boat Watch</h3>
               </Link>
             </div>
             <p className="serv-para">
-              Our Boat Watch service provides vigilant monitoring and upkeep,
+              Our boat watch service provides vigilant monitoring and upkeep,
               ensuring your boat is secure and ready for use whenever you need
               it. With regular checks and maintenance, we safeguard your boat's
               integrity and readiness for smooth sailing.
             </p>
             <div className="services-title">
-            <img src={CheckCircle} className="check" />
-            <Link to="/mercury-techs" className="title-link">
-                <h3>Mercury Techs</h3>
+              <img src={CheckCircle} className="check" />
+              <Link to="/marine-techs" className="title-link">
+                <h3>Marine Techs</h3>
               </Link>
             </div>
             <p className="serv-para">
-              Our Mercury techs are dedicated professionals specializing in
-              Mercury marine engines, delivering expert maintenance and repair
+              Our marine techs are dedicated professionals specializing in
+              marine marine engines, delivering expert maintenance and repair
               services. With their specialized knowledge and precision, they
-              ensure optimal performance and reliability for your boat's
-              Mercury engine.
+              ensure optimal performance and reliability for your boat's marine
+              engine.
             </p>
           </div>
         </div>
@@ -132,4 +136,4 @@ import { useEffect } from "react";
     </>
   );
 };
-export default Services
+export default Services;

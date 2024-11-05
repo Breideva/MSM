@@ -15,7 +15,7 @@ const Detail = lazy(() => import('./pages/Services/detailing'));
 const Hull = lazy(() => import('./pages/Services/hull-bottom-cleaning'));
 const Management = lazy(() => import('./pages/Services/monthly-management-plans'));
 const Watch = lazy(() => import('./pages/Services/boat-watch'));
-const Mercury = lazy(() => import('./pages/Services/mercury-techs'));
+const Marine = lazy(() => import('./pages/Services/marine-techs'));
 
 import { ScrollToTop } from './components/scrolltotop';
 import { Terms } from './pages/Legal/terms';
@@ -46,7 +46,7 @@ function App() {
           <Route path='hull-bottom-cleaning' element={<Hull />}></Route>
           <Route path='monthly-management-plans' element={<Management />}></Route>
           <Route path='boat-watch' element={<Watch />}></Route>
-          <Route path='mercury-techs' element={<Mercury />}></Route>
+          <Route path='marine-techs' element={<Marine />}></Route>
           {/* Projects */}
           <Route path="faq" element={<Faq />}></Route>
           

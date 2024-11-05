@@ -1,11 +1,10 @@
-import sunset from "../../assets/imgs/sunset.avif";
-import sunsetTwo from "../../assets/imgs/sunset-2.avif";
+import Boat from "../../assets/imgs/BoatOnWater.avif";
+import Guy from "../../assets/imgs/GuyWithFish.avif";
 import "../../styles/Services/service-pages.css";
 import { Layout } from "../../components/layout";
 import { servicePageAnimation } from "../../animation/servicePagesAnimation";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-
 
 const Usgc = () => {
   useEffect(() => {
@@ -35,7 +34,7 @@ const Usgc = () => {
                 <li>Personalized yacht parties</li>
               </ul>
             </div>
-            <img className="page-img-1" src={sunset} alt="" />
+            <img className="page-img-1" src={Guy} alt="" />
           </div>
           <div className="ser-body s-body">
             <div className="content cont-2">
@@ -48,7 +47,7 @@ const Usgc = () => {
                 <button>Learn More</button>
               </Link>{" "}
             </div>
-            <img className="page-img-2" src={sunsetTwo} alt="" />
+            <img className="page-img-2" src={Boat} alt="" />
           </div>
         </div>
       </Layout>

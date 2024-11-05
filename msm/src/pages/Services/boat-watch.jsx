@@ -1,5 +1,5 @@
-import sunset from "../../assets/imgs/sunset.avif";
-import sunsetTwo from "../../assets/imgs/sunset-2.avif";
+import Fishing from "../../assets/imgs/Fishing-3.avif";
+import Starfish from "../../assets/imgs/IMG_4167.avif";
 import "../../styles/Services/service-pages.css"
 import { Layout } from "../../components/layout";
 import { servicePageAnimation } from "../../animation/servicePagesAnimation";
@@ -28,7 +28,7 @@ const Watch = () => {
             </h2>
           </div>
 
-          <img className="page-img-1" src={sunset} alt="" />
+          <img className="page-img-1" src={Fishing} alt="" />
         </div>
         <div className="ser-body s-body">
           <div className="content cont-2">
@@ -42,7 +42,7 @@ const Watch = () => {
             </Link>
           </div>
 
-          <img className="page-img-2" src={sunsetTwo} alt="" />
+          <img className="page-img-2" src={Starfish} alt="" />
         </div>
       </div>
       </Layout>

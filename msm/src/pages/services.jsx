@@ -43,6 +43,9 @@ const Services = () => {
             <a href="#tech" className="sidebar-link">
               <h2>Marine Techs</h2>
             </a>
+            <a href="#prep" className="sidebar-link">
+              <h2>Hurricane Preperation</h2>
+            </a>
           </div>
         </div>
         <div className="services-content">
@@ -120,7 +123,7 @@ const Services = () => {
             <div className="services-title">
               <img src={CheckCircle} className="check" />
               <Link to="/marine-techs" className="title-link">
-                <h3>Marine Techs</h3>
+                <h3 id="prep">Marine Techs</h3>
               </Link>
             </div>
             <p className="serv-para">
@@ -129,6 +132,19 @@ const Services = () => {
               services. With their specialized knowledge and precision, they
               ensure optimal performance and reliability for your boat's marine
               engine.
+            </p>
+            <div className="services-title">
+              <img src={CheckCircle} className="check" />
+              <Link to="/hurricane-prep" className="title-link">
+                <h3>Hurricane Preperation</h3>
+              </Link>
+            </div>
+            <p className="serv-para">
+              We provide comprehensive hurricane preparedness services for boat
+              owners, ensuring safety and minimizing potential damage. Our team
+              helps secure boats, prepares emergency kits, and designs
+              customized evacuation plans, so you’re fully prepared for any
+              storm.
             </p>
           </div>
         </div>

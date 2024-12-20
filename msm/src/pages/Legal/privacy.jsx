@@ -20,7 +20,7 @@ export const Privacy = () => {
             Welcome to <b>Marine Services and Management</b>.
           </p>
           <p>
-            <b>Marine Services and Management</b> (“we,” “us,” or “our”)
+            <b>Marine Services and Management</b> (“we”, “us”, or “our”)
             operates <b>msmboatcare.com</b> (hereinafter referred to as the{" "}
             <b>“Service”</b>
             ).

@@ -12,8 +12,8 @@ import Sunset from "../assets/imgs/sunset.avif";
 import Sunset2 from "../assets/imgs/sunset-2.avif";
 import BoatFront from "../assets/imgs/boat-front.avif";
 import BoatBack from "../assets/imgs/back-of-boat.avif";
-import Midas from "../assets/imgs/Midas-prfl.png";
-import James from "../assets/imgs/James-prfl.png";
+import Guy1 from "../assets/imgs/guy-1.png";
+import Guy2 from "../assets/imgs/James-prfl.png";
 import Fishing2 from "../assets/imgs/Fishing-4.avif";
 
 // Gsap
@@ -154,14 +154,14 @@ const Home = () => {
               <ReviewBox
                 name="Ethan Caldwell"
                 position="Workhand for BoatMotor NT"
-                imageSrc={Midas}
+                imageSrc={Guy1}
                 reviewText="I've received consistent amazing service, they've always ensured my boat is ready for trips and taken care of."
                 stars={5}
               />
               <ReviewBox
                 name="Alex Hayes"
                 position="Product Manager at FFC"
-                imageSrc={James}
+                imageSrc={Guy2}
                 reviewText="Their detailing work has helped make my boat look immaculate. Their attention to detail is unmatched."
                 stars={5}
               />
